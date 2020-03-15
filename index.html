@@ -11,11 +11,22 @@
     <header>
       <h1>Employee Salary Calculator</h1>
     </header>
-    <h2 class="monthly_expenses">
+    <div class="ctn monthly_budget">
+      Enter Monthly Budget:
+      <input
+        type="text"
+        placeholder="Default is $20,000"
+        defaultValue="20000"
+        id="budget"
+      />
+      <button type="button" class="btn budget_button">Submit Budget</button>
+      <span class="new_monthly_budget"></span>
+    </div>
+    <h2 class="ctn monthly_expenses">
       Total Monthly Expenses: <span class="total_monthly_expenses"></span>
     </h2>
     <div>
-      <form class="employee_entry_form">
+      <form class="ctn employee_entry_form">
         <input
           type="text"
           placeholder="First Name"
@@ -36,7 +47,7 @@
           required
           id="annual_salary"
         />
-        <button type="submit" class="submit_button">Submit</button>
+        <button type="submit" class="btn submit_button">Submit Employee</button>
       </form>
     </div>
     <div>

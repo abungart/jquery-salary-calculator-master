@@ -1,12 +1,23 @@
 $(document).ready(init);
 
 let employees = [];
+let monthlyBudget = 20000;
 
 function init() {
   console.log("hello");
   $(".employee_entry_form").on("submit", formSubmit);
   $(".table_body").on("click", ".btn_delete", deleteRow);
+  $(".budget_button").on("click", changeBudget);
 } // end Init Function
+
+function changeBudget() {
+  monthlyBudget = $("#budget").val();
+  if (monthlyBudget === "") {
+    monthlyBudget = 20000;
+  } // end If
+  $("#budget").val("");
+  $(".new_monthly_budget").text(`The new Monthly Budget: $${monthlyBudget}`);
+} // end changeBudget Function
 
 function deleteRow() {
   const employeeIndex = $(this).data("index");
@@ -58,7 +69,7 @@ function render() {
   let monthlyCost = yearlyCost / 12;
   monthlyCost = monthlyCost.toFixed(2);
   $(".total_monthly_expenses").text(`$${monthlyCost}`);
-  if (monthlyCost > 20000) {
+  if (monthlyCost > monthlyBudget) {
     $(".monthly_expenses").css("background", "red");
   } // End if
   else {

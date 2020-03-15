@@ -40,11 +40,21 @@ th, td {
     border: 2px solid crimson;
 }
 
+.ctn {
+    padding-left: 25px;
+}
+
+.monthly_budget {
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
 .monthly_expenses {
     background-color: cornflowerblue;
 }
 
-.submit_button {
+.btn {
     cursor: pointer;
     border-radius: 4px;
     padding: 0px 10px 0px 10px;
