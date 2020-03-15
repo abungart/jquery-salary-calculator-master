@@ -62,6 +62,6 @@ function render() {
     $(".monthly_expenses").css("background", "red");
   } // End if
   else {
-    $(".monthly_expenses").css("background", "white");
+    $(".monthly_expenses").css("background", "cornflowerblue");
   } // End else
 } // End render Function

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: wheat;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 8px rgb(0, 0, 0, 0.5);
+}
+
+input {
+    font-size: 14pt;
+    border: 1px solid grey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: grey;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn_delete {
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16pt;
+    border: 2px solid crimson;
+}
+
+.monthly_expenses {
+    background-color: cornflowerblue;
+}
+
+.submit_button {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px;
+    font-size: 16pt;
+}
